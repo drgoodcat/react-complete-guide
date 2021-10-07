@@ -4,7 +4,7 @@ import "./Expenses.css";
 
 import React from "react";
 
-function Expenses(props) {
+const Expenses = (props) => {
   const data = props.expenses.map((expenses) => {
     return (
       <ExpenseItem
@@ -15,6 +15,6 @@ function Expenses(props) {
     );
   });
   return <Card className="expenses">{data}</Card>;
-}
+};
 
 export default Expenses;
