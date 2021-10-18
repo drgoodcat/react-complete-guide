@@ -1,12 +1,8 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
-import Expenses from "./Expenses";
 
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
-    const [filterYear, setFilterYear] = useState("");
-
     const dropdownChangeHandler = (event) => {
         props.onChangeFilter(event.target.value);
     };
